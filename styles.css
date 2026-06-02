@@ -1,17 +1,17 @@
 :root {
-  --paper: #f7f3ed;
-  --paper-warm: #efe7db;
-  --surface: #fffdf9;
-  --ink: #1f1714;
-  --muted: #6d5f55;
-  --coffee: #3b241c;
-  --coffee-soft: #6c4738;
-  --copper: #b26b3d;
-  --rose: #b94b54;
-  --sage: #68715d;
-  --gold: #d7b66c;
-  --line: rgba(59, 36, 28, 0.13);
-  --shadow: 0 28px 90px rgba(59, 36, 28, 0.14);
+  --paper: #f3eee7;
+  --paper-warm: #dfe5d8;
+  --surface: #fffaf3;
+  --ink: #2b201c;
+  --muted: #80685c;
+  --coffee: #956b58;
+  --coffee-soft: #b08776;
+  --copper: #a3715f;
+  --rose: #c79787;
+  --sage: #87937c;
+  --gold: #efe3cf;
+  --line: rgba(149, 107, 88, 0.18);
+  --shadow: 0 28px 90px rgba(86, 63, 51, 0.13);
 }
 
 * {
@@ -27,9 +27,9 @@ body {
   overflow-x: hidden;
   color: var(--ink);
   background:
-    radial-gradient(circle at 85% 10%, rgba(215, 182, 108, 0.2), transparent 25rem),
-    radial-gradient(circle at 10% 26%, rgba(178, 107, 61, 0.13), transparent 22rem),
-    linear-gradient(180deg, var(--paper), #fbf8f4 45%, var(--paper-warm));
+    radial-gradient(circle at 85% 10%, rgba(199, 151, 135, 0.18), transparent 25rem),
+    radial-gradient(circle at 10% 26%, rgba(135, 147, 124, 0.18), transparent 22rem),
+    linear-gradient(180deg, var(--paper), #fbf8f1 45%, var(--paper-warm));
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
@@ -46,7 +46,7 @@ img {
 
 .site-header {
   position: sticky;
-  top: 2px;
+  top: 0;
   z-index: 10;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -57,6 +57,7 @@ img {
   margin-top: 16px;
   padding: 16px;
   backdrop-filter: blur(18px);
+  width: 100%;
 
 }
 
@@ -77,7 +78,7 @@ img {
   border-radius: 50%;
   background: rgba(255, 253, 249, 0.82);
   font-family: Georgia, serif;
-  box-shadow: 0 14px 38px rgba(59, 36, 28, 0.1);
+  box-shadow: 0 14px 38px rgba(86, 63, 51, 0.1);
 }
 
 .nav {
@@ -113,7 +114,7 @@ footer a:hover {
   background: rgba(255, 253, 249, 0.88);
   cursor: pointer;
   list-style: none;
-  box-shadow: 0 14px 38px rgba(59, 36, 28, 0.1);
+  box-shadow: 0 14px 38px rgba(86, 63, 51, 0.1);
 }
 
 .mobile-menu summary::-webkit-details-marker {
@@ -139,7 +140,7 @@ footer a:hover {
   border-radius: 8px;
   background: rgba(255, 253, 249, 0.96);
   color: var(--muted);
-  box-shadow: 0 18px 46px rgba(59, 36, 28, 0.16);
+  box-shadow: 0 18px 46px rgba(86, 63, 51, 0.16);
   transform: translateX(-50%);
 }
 
@@ -186,9 +187,9 @@ footer a:hover {
 }
 
 .primary {
-  background: linear-gradient(135deg, var(--coffee), #1d1210);
+  background: linear-gradient(135deg, var(--coffee), #6f4c40);
   color: var(--surface);
-  box-shadow: 0 18px 48px rgba(59, 36, 28, 0.24);
+  box-shadow: 0 18px 48px rgba(86, 63, 51, 0.24);
 }
 
 .ghost {
@@ -381,6 +382,7 @@ h3 {
 .section-heading-2 h2 {
   max-width: 100%;
   margin-bottom: 1rem;
+  text-align: center;
   font-size: clamp(2.45rem, 5vw, 4.75rem);
 }
 
@@ -438,7 +440,7 @@ blockquote {
   padding: clamp(2rem, 5vw, 4rem);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(59, 36, 28, 0.94), rgba(29, 18, 16, 0.98)),
+    linear-gradient(135deg, rgba(135, 147, 124, 0.96), rgba(111, 76, 64, 0.96)),
     var(--coffee);
   color: var(--surface);
   box-shadow: var(--shadow);
@@ -521,13 +523,13 @@ blockquote {
 
 .science {
   background:
-    linear-gradient(135deg, rgba(104, 113, 93, 0.84), rgba(29, 18, 16, 0.86)),
+    linear-gradient(135deg, rgba(135, 147, 124, 0.9), rgba(111, 76, 64, 0.82)),
     var(--sage);
 }
 
 .affection {
   background:
-    linear-gradient(135deg, rgba(185, 75, 84, 0.82), rgba(59, 36, 28, 0.88)),
+    linear-gradient(135deg, rgba(199, 151, 135, 0.96), rgba(149, 107, 88, 0.92)),
     var(--rose);
 }
 
